@@ -4,6 +4,7 @@ body{
     align-items: center;
     min-height: 100vh;
    background: #fc1e86;
+   user-select: none;
 }
 .container{
     position: relative;
@@ -58,5 +59,19 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF';
+    background-color: #FFFFFF;
+    font-size: 3em;
+    transform: rotateY('180deg');
+    transition: 0.25s;
+}
+
+.item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.85;
+    background-color: #404040;
+    transition: 0.25s;
+    transform: rotateY('0deg');
+    backface-visibility: hid;
 }
