@@ -45,7 +45,6 @@ h2{
 .game{
     width: 430px;
     height: 430px;
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -68,7 +67,7 @@ h2{
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     background-color: #404040;
     transition: 0.25s;
     transform: rotateY(0deg);
