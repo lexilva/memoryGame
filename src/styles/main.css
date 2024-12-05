@@ -61,10 +61,9 @@ h2{
     justify-content: center;
     background-color: #FFFFFF;
     font-size: 3em;
-    transform: rotateY('180deg');
+    transform: rotateY(180deg);
     transition: 0.25s;
 }
-
 .item::after{
     content: "";
     position: absolute;
@@ -72,6 +71,14 @@ h2{
     opacity: 0.85;
     background-color: #404040;
     transition: 0.25s;
-    transform: rotateY('0deg');
-    backface-visibility: hid;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
 }
